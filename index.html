@@ -7,25 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>My Kanban Board</h1>
+  <h1>Kanban Board</h1>
+  <button id="theme-toggle">Toggle Dark / Light Mode</button>
+
   <div class="board">
+
     <div class="column" data-status="todo">
       <h2>To Do</h2>
+      <input type="text" placeholder="New Task" class="new-task-input">
+      <button onclick="addTaskInline(this)">+ Add Task</button>
       <div class="tasks" id="todo-tasks"></div>
-      <button onclick="addTask('todo')">+ Add Task</button>
     </div>
 
     <div class="column" data-status="in-progress">
       <h2>In Progress</h2>
+      <input type="text" placeholder="New Task" class="new-task-input">
+      <button onclick="addTaskInline(this)">+ Add Task</button>
       <div class="tasks" id="inprogress-tasks"></div>
-      <button onclick="addTask('in-progress')">+ Add Task</button>
     </div>
 
     <div class="column" data-status="completed">
       <h2>Completed</h2>
+      <input type="text" placeholder="New Task" class="new-task-input">
+      <button onclick="addTaskInline(this)">+ Add Task</button>
       <div class="tasks" id="completed-tasks"></div>
-      <button onclick="addTask('completed')">+ Add Task</button>
     </div>
+
   </div>
 
   <script src="script.js"></script>
